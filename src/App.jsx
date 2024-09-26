@@ -35,7 +35,7 @@ function App() {
                         <Navbarphone cartCount={cartCount} />
                         <Routes>
                             <Route path="/" element={<Navigate to="/home" replace />} />
-                            <Route path="/E-Cloth" element={<Homephone />} />
+                            <Route basename="/E-Cloth" path="/E-Cloth" element={<Homephone />} />
                             <Route path="/Shop" element={<Shopphone />} />
                             <Route path="/Modal" element={<Modalphone setCartProducts={setCartProducts} setCartCount={setCartCount} setSizeProduct={setSizeProduct} />} />
                             <Route path="/Cart" element={<Cartphone sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} />} />
@@ -48,7 +48,7 @@ function App() {
                         <Navbar cartCount={cartCount} />
                         <Routes>
                             <Route path="/" element={<Navigate to="/home" replace />} />
-                            <Route path="/E-Cloth" element={<Home />} />
+                            <Route basename="/E-Cloth" path="/E-Cloth" element={<Home />} />
                             <Route path="/Shop" element={<Shop cartCount={cartCount} setCartCount={setCartCount} setCartProducts={setCartProducts} setSizeProduct={setSizeProduct} />} />
                             <Route path="/On-Sale" element={<OnSale />} />
                             <Route path="/New-Arrivals" element={<NewArrivals />} />
