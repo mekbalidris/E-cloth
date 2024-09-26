@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Navbar from './Navbar/Navbar';
 import Navbarphone from './Navbar/Navbarphone';
 import Homephone from './Home/Homephone';
-import Home from './Home/Home';
+import Home from './Home/Home'; // Ensure this component has content
 import Shop from './Shop/Shop';
 import OnSale from './OnSale/OnSale';
 import NewArrivals from './NewArrivals/NewArrivals';
 import Shopphone from './Shop/Shopphone';
-import Cart from './Cart/Cart'; // Adjusted path
+import Cart from './Cart/Cart';
 import Modalphone from './Modal/Modal.phone';
 import Cartphone from './Cart/Cartphone';
 
@@ -34,27 +34,25 @@ function App() {
                     <div className='mob'>
                         <Navbarphone cartCount={cartCount} />
                         <Routes>
-                            <Route index element={<Homephone />} />
+                            <Route path="/" element={<Navigate to="/home" replace />} />
+                            <Route path="/E-Cloth" element={<Homephone />} />
                             <Route path="/Shop" element={<Shopphone />} />
                             <Route path="/Modal" element={<Modalphone setCartProducts={setCartProducts} setCartCount={setCartCount} setSizeProduct={setSizeProduct} />} />
                             <Route path="/Cart" element={<Cartphone sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} />} />
                             <Route path="/On-Sale" element={<OnSale />} />
                             <Route path="/New-Arrivals" element={<NewArrivals />} />
-                            {/* Redirect from the root path */}
-                            <Route path="/" element={<Navigate to="/home" replace />} />
                         </Routes>
                     </div>
                 ) : (
                     <div className='desk'>
                         <Navbar cartCount={cartCount} />
                         <Routes>
-                            <Route index element={<Home />} />
+                            <Route path="/" element={<Navigate to="/home" replace />} />
+                            <Route path="/E-Cloth" element={<Home />} />
                             <Route path="/Shop" element={<Shop cartCount={cartCount} setCartCount={setCartCount} setCartProducts={setCartProducts} setSizeProduct={setSizeProduct} />} />
                             <Route path="/On-Sale" element={<OnSale />} />
                             <Route path="/New-Arrivals" element={<NewArrivals />} />
                             <Route path="/Cart" element={<Cart sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} />} />
-                            {/* Redirect from the root path */}
-                            <Route path="/" element={<Navigate to="/" replace />} />
                         </Routes>
                     </div>
                 )}
