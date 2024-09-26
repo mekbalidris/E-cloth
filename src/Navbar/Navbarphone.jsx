@@ -50,7 +50,7 @@ function Navbarphone({cartCount}) {
             </Link>
 
             <Link 
-                to="/" 
+                to="/E-Cloth" 
                 className={styles.foot} 
                 onClick={() => handleLinkClick('home')}
             >
