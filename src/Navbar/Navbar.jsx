@@ -11,8 +11,8 @@ function Navbar({ cartCount }) {
     return (
         <div className={styles.home}>
             <nav>
-                <Link to="/" className={styles.logo}>E-Cloth</Link>
-                <Link to="/" className={styles.Npage}>Home</Link>
+                <Link to="/E-Cloth" className={styles.logo}>E-Cloth</Link>
+                <Link to="/E-Cloth" className={styles.Npage}>Home</Link>
                 <Link to="/shop" className={styles.Npage}>Shop</Link>
                 <Link to="/on-sale" className={styles.Npage}>On Sale</Link>
                 <Link to="/new-arrivals" className={styles.Npage}>New Arrivals</Link>
