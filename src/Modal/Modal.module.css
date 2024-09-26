@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modalContent {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5vw;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    box-shadow: 0 5px 8px rgb(0, 0, 0);
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.closeButton:hover{
+    color: red;
+}
+
+.productImage {
+    height: 12vw;
+    object-fit: contain;
+}
+
+.imageSlider{
+    position: relative;
+    width: 60vw;
+    margin-left: 10.5vw;
+    margin-top: 1.5vw;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 25vw 34vw 17vw;
+    flex-direction: row;
+    margin-top: 5.5vw;
+    gap:0.4em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.prodname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82vw;
+    margin-top: 1vw;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.description{
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 0.2em;
+    width:23vw;
+    background-color: rgb(204, 204, 243);
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px black;
+}
+
+.desc{
+    font-size: 1.5em;
+}
+
+.lorem{
+    font-family: "Open Sans";
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.options{
+    background-color: rgb(204, 204, 243);
+    border-radius: 20px;
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap:2vw;
+}
+
+.amountCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.decrement, .increment {
+    background-color: #9b9b9b;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    margin: 0px 10px;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+  
+.decrement:hover, .increment:hover {
+    background-color: #c9c9c9;
+}
+  
+.countDisplay {
+    font-size: 18px;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.size{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+}
+
+.number{
+    border-radius: 50px;
+    font-size: 2vw;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.number:hover{
+    background-color: gray;
+}
+
+.ammount{
+    margin-top: 0.5vw;
+}
+
+
+.customArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: black;
+    color: white;
+    font-size: 2vw; /* Increase size as needed */
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.7; /* Slight transparency */
+    transition: opacity 0.3s ease;
+}
+
+.customArrow:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+.prevArrow {
+    left: -100px; /* Position the left (previous) arrow on the left side */
+}
+
+.nextArrow {
+    right: -60px; /* Position the right (next) arrow on the right side */
+}
+
+/* Remove the default slick arrows */
+.slick-prev::before, .slick-next::before {
+    content: none;
+}

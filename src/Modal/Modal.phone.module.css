@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+.modalContainer {
+    margin-top: 75px;
+    width: 90vw;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 0px 4px 30px rgb(0, 0, 0);
+}
+
+
+.modalContainer img {
+    width: 25vw; 
+    height: auto;
+    object-fit: cover;
+}
+
+
+.productContainer img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; 
+    border-radius: 10px;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+
+.customArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: black;
+    font-size: 2.5rem;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prevArrow {
+    left: -30px; 
+}
+
+.nextArrow {
+    right: -30px; 
+}
+
+
+.amountCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.decrement, .increment {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.countDisplay {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 40px;
+    text-align: center;
+}
+
+
+h2{
+    font-size: 8vw;
+}
+
+p{
+    font-size: 3vmax;
+}
+
+.size{
+    display: flex;
+    gap:5vw;
+    font-size: 5vw;
+}
+
+.footer{
+    padding: 70px;
+}
+
+.description{
+    width: 80%;
+    background-color: white;
+    padding: 5vw;
+    border-radius: 50px;
+}

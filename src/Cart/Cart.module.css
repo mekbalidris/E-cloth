@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.container {
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2vw;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.headerRow, .productRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.productRows .productRow {
+    font-weight: normal;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prodimg {
+    width: 8vw;
+    height: auto;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.promoSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.promoSection input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.promoSection button {
+    padding: 0.7rem 1.5rem;
+    background-color: #734d39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.promoSection button:hover {
+    background-color: #5b3c2c;
+}
+
+.updateButton {
+    background-color: #e0e0e0;
+    color: #999;
+}
+
+.updateButton:hover {
+    background-color: #ccc;
+}
