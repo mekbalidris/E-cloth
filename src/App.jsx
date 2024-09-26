@@ -34,7 +34,7 @@ function App() {
                     <div className='mob'>
                         <Navbarphone cartCount={cartCount} />
                         <Routes>
-                            <Route path="/" element={<Navigate to="/home" replace />} />
+                            
                             <Route basename="/E-Cloth" path="/E-Cloth" element={<Homephone />} />
                             <Route path="/Shop" element={<Shopphone />} />
                             <Route path="/Modal" element={<Modalphone setCartProducts={setCartProducts} setCartCount={setCartCount} setSizeProduct={setSizeProduct} />} />
@@ -47,7 +47,7 @@ function App() {
                     <div className='desk'>
                         <Navbar cartCount={cartCount} />
                         <Routes>
-                            <Route path="/" element={<Navigate to="/home" replace />} />
+                            
                             <Route basename="/E-Cloth" path="/E-Cloth" element={<Home />} />
                             <Route path="/Shop" element={<Shop cartCount={cartCount} setCartCount={setCartCount} setCartProducts={setCartProducts} setSizeProduct={setSizeProduct} />} />
                             <Route path="/On-Sale" element={<OnSale />} />
