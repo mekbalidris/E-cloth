@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formContainer {
+    margin-top: 65px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 2vmax;
+    font-size: 5vmax;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+    font-size: 3vmax;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.totalPrice {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.submitButton {
+    padding: 10px 15px;
+    background-color: #5b3c2c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 3vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #7b5439;
+}
+
+.footer{
+    margin-top: 2vw;
+    height: 2vw;
+}
+
+
+@media (min-width: 1100px) {
+    .container{
+        margin-left: 10vw;
+    }
+}

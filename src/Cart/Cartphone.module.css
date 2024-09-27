@@ -24,8 +24,7 @@
 /* Steps section */
 .steps {
     display: flex;
-    justify-content: space-between;
-    font-size: 1.1em;
+    justify-content: center;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -116,6 +115,32 @@
 .footer{
     padding: 50px;
 }
+
+
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.productRow {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

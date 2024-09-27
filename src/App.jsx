@@ -11,6 +11,8 @@ import Shopphone from './Shop/Shopphone';
 import Cart from './Cart/Cart';
 import Modalphone from './Modal/Modal.phone';
 import Cartphone from './Cart/Cartphone';
+import Confirmphone from './Confirm/Confirmphone';
+import Thankphone from './Thank/Thankphone'
 
 function App() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
@@ -38,7 +40,9 @@ function App() {
                             <Route basename="/E-Cloth" path="/E-Cloth" element={<Homephone />} />
                             <Route path="/Shop" element={<Shopphone />} />
                             <Route path="/Modal" element={<Modalphone setCartProducts={setCartProducts} setCartCount={setCartCount} setSizeProduct={setSizeProduct} />} />
-                            <Route path="/Cart" element={<Cartphone sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} />} />
+                            <Route path="/Cart" element={<Cartphone sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} setCartProducts={setCartProducts} setCartCount={setCartCount}/>} />
+                            <Route path="/Thanks" element={<Thankphone />} />
+                            <Route path="/Confirm" element={<Confirmphone cartProducts={cartProducts} />} />
                             <Route path="/On-Sale" element={<OnSale />} />
                             <Route path="/New-Arrivals" element={<NewArrivals />} />
                         </Routes>
@@ -53,6 +57,8 @@ function App() {
                             <Route path="/On-Sale" element={<OnSale />} />
                             <Route path="/New-Arrivals" element={<NewArrivals />} />
                             <Route path="/Cart" element={<Cart sizeProduct={sizeProduct} cartProducts={cartProducts} cartCount={cartCount} />} />
+                            <Route path="/Thanks" element={<Thankphone />} />
+                            <Route path="/Confirm" element={<Confirmphone cartProducts={cartProducts} />} />
                         </Routes>
                     </div>
                 )}
