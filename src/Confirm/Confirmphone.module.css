@@ -53,13 +53,15 @@ input {
 }
 
 .submitButton {
+    display: flex;
+    justify-content: center;
     padding: 10px 15px;
     background-color: #5b3c2c;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 3vw;
-    height: 5vw;
+    padding: 1.6vw;
     cursor: pointer;
 }
 
@@ -68,8 +70,8 @@ input {
 }
 
 .footer{
-    margin-top: 2vw;
-    height: 2vw;
+    margin-top: 20vw;
+    height: 5vw;
 }
 
 
