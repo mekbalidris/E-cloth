@@ -2,7 +2,7 @@ import Productsold from 'C:/Users/idris/OneDrive/Desktop/second-react/my-react-a
 import shoe from 'C:/Users/idris/OneDrive/Desktop/second-react/my-react-app/src/Home/photos/shoe.png'
 import styles from './OnSale.module.css'
 
-function OnSale({what}) {
+function OnSale() {
 
     const products = [
         {id: 1,image: shoe,prods: 'Shoe 1',price: '999$',gender: 'female',old: '111$'},
